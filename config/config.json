@@ -1,0 +1,5 @@
+{
+	"repos": ["user/repo", "user/repo2"],
+	"token": "YOUR GITHUB TOKEN HERE",
+	"sentinel": [":+1:", ":metal:"]
+}
