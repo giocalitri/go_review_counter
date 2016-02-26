@@ -9,6 +9,7 @@ import (
 import (
 	"go_review_counter/utils"
 	"go_review_counter/config"
+	"go_review_counter/reviews"
 )
 
 const APP_VERSION = "0.1"
@@ -52,5 +53,6 @@ func main() {
 
 	finalConfig := config.ChooseConfig(confFromCommandline, confFromFile)
 
-	fmt.Printf("%+v\n", finalConfig)
+	reviewList := reviews.GetReviews(finalConfig)
+	fmt.Printf("%+v\n", reviewList)
 }
